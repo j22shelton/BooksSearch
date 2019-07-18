@@ -1,0 +1,27 @@
+{
+  "name": "bookssearch",
+  "version": "1.0.0",
+  "description": "This assignment requires React components, works with helper functions, and utilize the React mounting lifecycle to query and display articles based on user searches. Also Node, Express and MongoDB are used so that users can save articles to read later.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon node server.js\" \"npm run client\"",
+    "client": "cd client && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j22shelton/BooksSearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j22shelton/BooksSearch/issues"
+  },
+  "homepage": "https://github.com/j22shelton/BooksSearch#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.5",
+    "nodemon": "^1.19.1"
+  }
+}
