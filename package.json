@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"nodemon node server.js\" \"npm run client\"",
-    "client": "cd client && npm run start"
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
