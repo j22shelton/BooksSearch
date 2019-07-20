@@ -20,10 +20,7 @@ const SavedResult = props => {
                         return (
                             <li className="saved-list list-group-item">
                                 <Row className="SearchResult" id={savedbook.title + "Card"} key={savedbook._id}>
-                                    {/* col-3 show image of the book */}
-                                    <Col size="2" className="bookImage">
-                                        <img src={savedbook.image} alt={savedbook.title} />
-                                    </Col>
+                                   
                                     <Col size="1" className="emptyCol"/>
                                     {/* col-9 show information of the book */}
                                     <Col size="9" className="bookInfo">
@@ -44,10 +41,9 @@ const SavedResult = props => {
                                         Delete Book
                                     </button>
                                     <a href={savedbook.link} target="blank">
-                                        <button className="viewBook btn btn-success">
-                                            View Book
-                                        </button>
+                                        
                                     </a>
+                                    
                                 </Row>
                             </li>
                         );
