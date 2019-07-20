@@ -19,7 +19,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 //Connet to mongoose
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://j22shelton:Swordfish7&@ds245387.mlab.com:45387/heroku_v1r4c2tv");
 
 //listen for request
 app.listen(PORT, () => {
