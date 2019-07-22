@@ -8,7 +8,11 @@
     "start": "concurrently \"nodemon node server.js\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install -- only=dev && npm install && npm run build"
+  },
+    "engines": {
+      "node": "11.8.0"
   },
   "repository": {
     "type": "git",
